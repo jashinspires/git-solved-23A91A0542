@@ -101,4 +101,5 @@ MIT License
 ## FAQ
 - **Can I enable experimental features in production?** No, keep them in staging until fully validated.
 - **How do I revert to a stable state?** Use `git revert` on the merge commits or redeploy the last tagged release.
+- **Where are AI assets stored?** Models live under `models/` and should not be shipped to production artifacts.
 

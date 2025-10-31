@@ -49,6 +49,17 @@ DevOps Simulator follows a microservices architecture designed for high availabi
 
 ## Experimental Features
 ⚠️ The following capabilities are behind feature flags and require additional validation before production enablement:
-- Multi-cloud deployment strategy
-- AI-assisted log analysis
-- Automatic rollback on anomaly detection
+- Multi-cloud deployment strategy with Kubernetes custom resources
+- AI-assisted log analysis and anomaly detection powered by TensorFlow.js
+- Automatic rollback on anomaly detection with canary rollout automation
+- Distributed PostgreSQL clusters with ML-based query optimization
+- Chaos engineering harness for resilience testing
+
+When the `experimental` profile is enabled, the platform activates:
+
+- **AI/ML Pipeline**: Real-time inference using pre-trained models with background retraining windows under 50ms latency targets.
+- **Multi-Cloud Orchestration**: Concurrent deployment to AWS, Azure, GCP, and DigitalOcean with global anycast balancing.
+- **Enhanced Observability**: Prometheus + Thanos metrics retention, ELK stack log aggregation, and AI-powered anomaly alerts.
+- **Safety Nets**: Canary strategy with incremental traffic shifting (10% → 50% → 100%) and AI-driven rollback triggers.
+
+> Experimental mode is intended for isolated staging environments. Do not enable in production without comprehensive validation.
